@@ -22,4 +22,17 @@
     <ProjectReference Include="..\DreamStay.Infrastructure\DreamStay.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\_Notification.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Shared\_Notification.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\VillaImage\" />
+  </ItemGroup>
+
+
 </Project>

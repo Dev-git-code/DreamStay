@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DreamStay.Domain\DreamStay.Domain.csproj" />
+    <ProjectReference Include="..\DreamStay.Application\DreamStay.Application.csproj" />
   </ItemGroup>
 
 </Project>

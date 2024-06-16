@@ -1,4 +1,6 @@
+using DreamStay.Application.Common.Interfaces;
 using DreamStay.Infrastructure.Data;
+using DreamStay.Infrastructure.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(option =>
 option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddScoped<IUnitofWork, UnitofWork>();
 
 var app = builder.Build();
 
